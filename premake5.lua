@@ -31,6 +31,7 @@ group "Dependencies"
 		cppdialect "C++20"
 		staticruntime "off"
 		architecture "x64"
+        disablewarnings { "4996", "4005" }
 		targetdir ("%{wks.location}/bin/" .. outputdir)
 		objdir ("%{wks.location}/obj/" .. tmpdir)
 
