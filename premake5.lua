@@ -4,8 +4,8 @@ project "ImGui"
     staticruntime "off"
 	disablewarnings { "4996", "4005" }
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("%{wks.location}/bin/" .. outputdir)
+	objdir ("%{wks.location}/obj/" .. tmpdir)
 
 	files
 	{
