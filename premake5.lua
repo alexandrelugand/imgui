@@ -3,7 +3,7 @@ project "ImGui"
 	language "C++"
     staticruntime "off"
 	disablewarnings { "4996", "4005" }
-
+    architecture "x64"
 	targetdir ("%{wks.location}/bin/" .. outputdir)
 	objdir ("%{wks.location}/obj/" .. tmpdir)
 
