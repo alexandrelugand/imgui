@@ -32,7 +32,7 @@ group "Dependencies"
 		staticruntime "off"
 		architecture "x64"
 		targetdir ("%{wks.location}/bin/" .. outputdir)
-		objdir ("%{wks.location}/bin-int/" .. tmpdir)
+		objdir ("%{wks.location}/obj/" .. tmpdir)
 
 		files(_files)
 		includedirs(_includedirs)
